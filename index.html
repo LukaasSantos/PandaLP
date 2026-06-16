@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>.panda | Sua Marca é Nosso Mundo</title>
+  <meta name="title" content=".panda | Sua Marca é Nosso Mundo">
+  <meta name="description"
+    content="Acelere seus resultados com estratégias premium de Marketing Pessoal, Marketing de Conteúdo, Gestão de Redes Sociais, Web Design e Cursos exclusivos.">
+  <meta name="keywords"
+    content="marketing digital, marketing pessoal, marketing de conteudo, redes sociais, web design, design grafico, cursos de marketing, panda marketing">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Portuguese">
+  <meta name="author" content=".panda">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pandamarketing.com.br/">
+  <meta property="og:title" content=".panda | Sua Marca é Nosso Mundo">
+  <meta property="og:description"
+    content="Estratégias premium de posicionamento, design e conteúdo digital para elevar sua marca ao topo do mercado.">
+  <meta property="og:image" content="https://pandamarketing.com.br/assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pandamarketing.com.br/">
+  <meta property="twitter:title" content=".panda | Sua Marca é Nosso Mundo">
+  <meta property="twitter:description"
+    content="Estratégias premium de posicionamento, design e conteúdo digital para elevar sua marca ao topo do mercado.">
+  <meta property="twitter:image" content="https://pandamarketing.com.br/assets/og-image.jpg">
+
+  <!-- CSS Resources -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#facc15',
+              'yellow-hover': '#eab308',
+              black: '#0a0a0a',
+              dark: '#121212',
+              gray: '#1f1f1f',
+              muted: '#71717a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS (Animate On Scroll) Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MarketingAgency",
+    "name": ".panda",
+    "alternateName": ".panda",
+    "url": "https://pandamarketing.com.br/",
+    "logo": "https://pandamarketing.com.br/assets/logo.png",
+    "description": "Estratégias premium de Marketing Pessoal, Marketing de Conteúdo, Gestão de Redes Sociais, Web Design e Cursos exclusivos.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "slogan": "sua marca é nosso mundo"
+  }
+  </script>
+</head>
+
+<body class="bg-brand-black text-zinc-100 antialiased">
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress"
+    class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brand-yellow via-yellow-400 to-amber-500 z-[60] transition-all duration-100"
+    style="width: 0%;"></div>
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+
+    <!-- Main Header Row -->
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Brand Logo -->
+      <a href="#/home" class="flex items-center space-x-3 group">
+        <div
+          class="w-10 h-10 rounded-xl bg-brand-yellow flex items-center justify-center transition-transform group-hover:rotate-12 duration-300">
+          <svg class="w-6 h-6 text-brand-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+        </div>
+        <div>
+          <span class="font-display font-black text-xl tracking-tight text-white"><span
+              class="text-brand-yellow">.</span>panda</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu (Main Header Links) -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#/home"
+          class="text-sm font-medium tracking-wide text-zinc-300 hover:text-white transition-colors duration-200">Início</a>
+        <a href="#/services"
+          class="text-sm font-medium tracking-wide text-zinc-300 hover:text-white transition-colors duration-200">Serviços</a>
+        <a href="#/blog"
+          class="text-sm font-medium tracking-wide text-zinc-300 hover:text-white transition-colors duration-200">Blog</a>
+      </nav>
+
+      <!-- Contact CTA Button -->
+      <div class="hidden md:block">
+        <a href="#contact"
+          class="btn-premium px-6 py-2.5 rounded-full bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-semibold text-sm transition-all duration-300">
+          Fale Conosco
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-zinc-400 hover:text-white focus:outline-none"
+        aria-label="Menu de Navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- Subheader Desktop Row (SPA links) -->
+    <div class="hidden md:block border-t border-white/[0.03] bg-brand-dark/50 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-6 py-2.5 flex justify-center space-x-8">
+        <a href="#/marketing-pessoal"
+          class="nav-spa-link text-xs uppercase tracking-wider font-semibold text-zinc-300 hover:text-white transition-colors duration-200">Marketing
+          Pessoal</a>
+        <a href="#/marketing-conteudo"
+          class="nav-spa-link text-xs uppercase tracking-wider font-semibold text-zinc-300 hover:text-white transition-colors duration-200">Marketing
+          de Conteúdo</a>
+        <a href="#/redes-sociais"
+          class="nav-spa-link text-xs uppercase tracking-wider font-semibold text-zinc-300 hover:text-white transition-colors duration-200">Redes
+          Sociais</a>
+        <a href="#/web-design"
+          class="nav-spa-link text-xs uppercase tracking-wider font-semibold text-zinc-300 hover:text-white transition-colors duration-200">Web
+          Design</a>
+        <a href="#/design-grafico"
+          class="nav-spa-link text-xs uppercase tracking-wider font-semibold text-zinc-300 hover:text-white transition-colors duration-200">Design
+          Gráfico</a>
+        <a href="#/cursos"
+          class="nav-spa-link text-xs uppercase tracking-wider font-semibold text-zinc-300 hover:text-white transition-colors duration-200">Cursos</a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-menu"
+      class="md:hidden absolute top-full left-0 w-full bg-brand-dark border-b border-zinc-800/80 px-6 py-6 transition-all duration-300 shadow-2xl mobile-menu-dropdown">
+      <nav class="flex flex-col space-y-4">
+        <!-- Main Links Section -->
+        <div class="border-b border-zinc-800 pb-3 flex flex-col space-y-2">
+          <a href="#/home" class="text-sm font-bold text-white">Início</a>
+          <a href="#/services" class="text-sm font-bold text-zinc-300 hover:text-white">Serviços</a>
+          <a href="#/blog" class="text-sm font-bold text-zinc-300 hover:text-white">Blog</a>
+        </div>
+        <!-- Services Section -->
+        <div class="flex flex-col space-y-2">
+          <span class="text-[9px] uppercase tracking-wider font-bold text-zinc-500">Serviços & Soluções</span>
+          <a href="#/marketing-pessoal" class="nav-spa-link text-xs text-zinc-300 hover:text-white">Marketing
+            Pessoal</a>
+          <a href="#/marketing-conteudo" class="nav-spa-link text-xs text-zinc-300 hover:text-white">Marketing de
+            Conteúdo</a>
+          <a href="#/redes-sociais" class="nav-spa-link text-xs text-zinc-300 hover:text-white">Redes Sociais</a>
+          <a href="#/web-design" class="nav-spa-link text-xs text-zinc-300 hover:text-white">Web Design</a>
+          <a href="#/design-grafico" class="nav-spa-link text-xs text-zinc-300 hover:text-white">Design Gráfico</a>
+          <a href="#/cursos" class="nav-spa-link text-xs text-zinc-300 hover:text-white">Cursos</a>
+        </div>
+        <a href="#contact"
+          class="block w-full text-center py-3 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-semibold text-sm transition-all duration-300">Fale
+          Conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SPA Views Container -->
+  <main class="view-transition-container pt-24 min-h-screen">
+
+    <!-- 1. HOME VIEW -->
+    <section id="home-view" class="spa-view active-view">
+
+      <!-- Hero Section -->
+      <div class="relative overflow-hidden pt-12 pb-24 md:py-32 bg-radial-gradient">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+          <!-- Hero Text Content -->
+          <div data-aos="fade-right" data-aos-duration="1000"
+            class="space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-brand-yellow font-medium">
+              <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+              <span>Branding de Autoridade & Performance Digital</span>
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-black leading-tight tracking-tight text-white">
+              Sua Marca é <br><span class="text-gradient-yellow">Nosso Mundo.</span>
+            </h1>
+
+            <p class="text-zinc-400 text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Elevamos profissionais e empresas através de estratégias sofisticadas de Marketing Pessoal, Conteúdo e
+              Design. Construa autoridade e impacte seu mercado.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#services-grid"
+                class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold text-center transition-all duration-300">
+                Explorar Nossos Serviços
+              </a>
+              <a href="#/cursos"
+                class="px-8 py-4 rounded-xl border border-zinc-800 hover:border-zinc-700 bg-brand-dark hover:bg-brand-gray text-white font-semibold text-center transition-all duration-300">
+                Ver Cursos
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image Placeholder (Green Background) -->
+          <div data-aos="fade-left" data-aos-duration="1000" class="relative">
+            <div
+              class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-yellow to-emerald-600 opacity-20 blur-xl">
+            </div>
+            <div class="green-placeholder w-full aspect-[4/3] rounded-3xl shadow-2xl flex flex-col justify-between p-8">
+              <div class="flex justify-between items-start">
+                <span
+                  class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow">.panda
+                  HQ</span>
+                <span class="text-zinc-300 text-xs">Estúdio de Criação</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold font-display text-white">Inovação em Cada Detalhe</h3>
+                <p class="text-zinc-200 text-xs max-w-sm">Placeholder dedicado para representação da equipe de Web
+                  Design & Branding da .panda.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Dedicated "Sobre Nós" Section -->
+      <div id="about-us" class="py-24 border-t border-zinc-900 bg-brand-dark/20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 space-y-16">
+
+          <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-display font-extrabold" data-aos="fade-up">Conheça a .panda</h2>
+            <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+            <p class="text-zinc-400" data-aos="fade-up" data-aos-delay="100">Paixão por conectar pessoas e impulsionar
+              negócios através de marketing e design estratégico.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+            <!-- Storytelling (Left Column) -->
+            <div
+              class="lg:col-span-7 space-y-6 border-l-0 lg:border-l-2 border-brand-yellow/30 pl-0 lg:pl-8 text-center lg:text-left"
+              data-aos="fade-right">
+              <h3 class="text-2xl md:text-3xl font-display font-black text-white">Comunicação como chave de excelentes
+                negócios</h3>
+              <p class="text-zinc-300 leading-relaxed text-sm md:text-base">
+                Olá! Somos um grupo de pessoas apaixonadas por ajudar pessoas a estarem em contato com outras pessoas.
+                Acreditamos verdadeiramente que a comunicação é a chave para fechar excelentes negócios e construir
+                relações de valor.
+              </p>
+              <p class="text-zinc-300 leading-relaxed text-sm md:text-base">
+                A <strong>.panda</strong> nasceu da vontade de auxiliar empresas e pessoas através da nossa criatividade
+                e conhecimento estratégico. Atuando na área desde 2005, fomos evoluindo e nos aprimorando com o tempo —
+                e nunca paramos de fazê-lo!
+              </p>
+              <p class="text-zinc-300 leading-relaxed text-sm md:text-base">
+                Dessa paixão em ver que nosso trabalho ajuda o crescimento do outro, estamos empenhados em atendê-lo de
+                forma personalizada. Cada solução em marketing digital e de conteúdo deve ser perfeitamente adaptada ao
+                estilo e identidade do cliente. Somente assim, sua comunicação e valores serão claros e efetivos,
+                resultando em vendas e fortalecimento de sua marca.
+              </p>
+            </div>
+
+            <!-- Pillars (Right Column) -->
+            <div class="lg:col-span-5 space-y-6" data-aos="fade-left">
+
+              <!-- Missão -->
+              <div class="p-6 glass-panel rounded-2xl space-y-2">
+                <div class="flex items-center space-x-3 text-brand-yellow">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                  <h4 class="font-display font-bold text-white text-base">Nossa Missão</h4>
+                </div>
+                <p class="text-zinc-400 text-xs md:text-sm leading-relaxed">
+                  Auxiliar nossos clientes em seu crescimento através de nossa expertise, carinho e atenção.
+                </p>
+              </div>
+
+              <!-- Valores -->
+              <div class="p-6 glass-panel rounded-2xl space-y-2">
+                <div class="flex items-center space-x-3 text-brand-yellow">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                    </path>
+                  </svg>
+                  <h4 class="font-display font-bold text-white text-base">Nossos Valores</h4>
+                </div>
+                <p class="text-zinc-400 text-xs md:text-sm leading-relaxed">
+                  Ética, transparência, resultados, inovação, criatividade, carinho e atendimento humanizado.
+                </p>
+              </div>
+
+              <!-- Equipe -->
+              <div class="p-6 glass-panel rounded-2xl space-y-2">
+                <div class="flex items-center space-x-3 text-brand-yellow">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                    </path>
+                  </svg>
+                  <h4 class="font-display font-bold text-white text-base">Equipe</h4>
+                </div>
+                <p class="text-zinc-400 text-xs md:text-sm leading-relaxed">
+                  Contamos com uma equipe multidisciplinar focada em atender e oferecer as melhores soluções para seus
+                  objetivos.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Why choose us highlights -->
+          <div class="space-y-8 pt-12 border-t border-zinc-900/60">
+            <h3 class="text-2xl font-display font-black text-center text-white" data-aos="fade-up">Por que ser um panda?
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+              <!-- Highlight 1 -->
+              <div class="p-6 glass-panel rounded-2xl space-y-3" data-aos="fade-up" data-aos-delay="100">
+                <span class="block font-display font-black text-3xl text-brand-yellow/30">01</span>
+                <h4 class="font-display font-bold text-white text-sm">Equipe Multidisciplinar</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Profissionais especializados trabalhando em sincronia
+                  pela sua marca.</p>
+              </div>
+
+              <!-- Highlight 2 -->
+              <div class="p-6 glass-panel rounded-2xl space-y-3" data-aos="fade-up" data-aos-delay="200">
+                <span class="block font-display font-black text-3xl text-brand-yellow/30">02</span>
+                <h4 class="font-display font-bold text-white text-sm">Soluções Personalizadas</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Estratégias sob medida desenhadas para a identidade da
+                  sua marca.</p>
+              </div>
+
+              <!-- Highlight 3 -->
+              <div class="p-6 glass-panel rounded-2xl space-y-3" data-aos="fade-up" data-aos-delay="300">
+                <span class="block font-display font-black text-3xl text-brand-yellow/30">03</span>
+                <h4 class="font-display font-bold text-white text-sm">Atendimento Humanizado</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Acompanhamento feito com carinho, atenção e de forma
+                  personalizada.</p>
+              </div>
+
+              <!-- Highlight 4 -->
+              <div class="p-6 glass-panel rounded-2xl space-y-3" data-aos="fade-up" data-aos-delay="400">
+                <span class="block font-display font-black text-3xl text-brand-yellow/30">04</span>
+                <h4 class="font-display font-bold text-white text-sm">Melhor Custo-Benefício</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Alto padrão de entregas e foco total no retorno de
+                  investimento.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Services Grid Section -->
+      <div id="services-grid" class="py-24 border-t border-zinc-900 bg-brand-dark/40">
+        <div class="max-w-7xl mx-auto px-6">
+
+          <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-display font-extrabold" data-aos="fade-up">Nossas Especialidades</h2>
+            <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+            <p class="text-zinc-400" data-aos="fade-up" data-aos-delay="100">Soluções digitais completas para quem busca
+              inovação, sofisticação e resultados tangíveis no ambiente digital.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1: Marketing Pessoal -->
+            <div data-aos="fade-up"
+              class="glass-panel glass-card-hover rounded-t-[2.5rem] rounded-b-[1rem] p-8 flex flex-col justify-between h-[360px] border-t-2 border-t-brand-yellow/30">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center transition-all duration-300 group-hover:bg-brand-yellow group-hover:text-black">
+                    <!-- Heroicon: user -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                  </div>
+                  <span
+                    class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-brand-yellow/10 text-brand-yellow">Branding</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white mb-3 tracking-tight">Marketing Pessoal</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">Construa sua imagem de autoridade. Desenvolvemos
+                  estratégias de branding pessoal para destacar o seu profissionalismo no mercado.</p>
+              </div>
+              <div class="pt-6 border-t border-zinc-900/60 mt-auto">
+                <a href="#/marketing-pessoal"
+                  class="inline-flex items-center text-brand-yellow text-xs font-bold hover:text-white transition-colors duration-200 group">
+                  Explorar Posicionamento
+                  <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Marketing de Conteúdo -->
+            <div data-aos="fade-up" data-aos-delay="100"
+              class="glass-panel glass-card-hover rounded-t-[2.5rem] rounded-b-[1rem] p-8 flex flex-col justify-between h-[360px] border-t-2 border-t-brand-yellow/30">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center transition-all duration-300">
+                    <!-- Heroicon: document-text -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span
+                    class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-brand-yellow/10 text-brand-yellow">Autoridade</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white mb-3 tracking-tight">Marketing de Conteúdo</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">Artigos, newsletters e e-books desenhados para engajar
+                  sua audiência, educar o lead e transformá-lo em cliente fiel.</p>
+              </div>
+              <div class="pt-6 border-t border-zinc-900/60 mt-auto">
+                <a href="#/marketing-conteudo"
+                  class="inline-flex items-center text-brand-yellow text-xs font-bold hover:text-white transition-colors duration-200 group">
+                  Planejar Conteúdo
+                  <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Redes Sociais -->
+            <div data-aos="fade-up" data-aos-delay="200"
+              class="glass-panel glass-card-hover rounded-t-[2.5rem] rounded-b-[1rem] p-8 flex flex-col justify-between h-[360px] border-t-2 border-t-brand-yellow/30">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center transition-all duration-300">
+                    <!-- Heroicon: chat-alt -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span
+                    class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-brand-yellow/10 text-brand-yellow">Tráfego</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white mb-3 tracking-tight">Redes Sociais</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">Criação de calendários editoriais, artes dinâmicas,
+                  copywriting persuasivo e gestão de tráfego pago integrada.</p>
+              </div>
+              <div class="pt-6 border-t border-zinc-900/60 mt-auto">
+                <a href="#/redes-sociais"
+                  class="inline-flex items-center text-brand-yellow text-xs font-bold hover:text-white transition-colors duration-200 group">
+                  Escalar Comunidade
+                  <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Web Design -->
+            <div data-aos="fade-up"
+              class="glass-panel glass-card-hover rounded-t-[2.5rem] rounded-b-[1rem] p-8 flex flex-col justify-between h-[360px] border-t-2 border-t-brand-yellow/30">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center transition-all duration-300">
+                    <!-- Heroicon: code -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                    </svg>
+                  </div>
+                  <span
+                    class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-brand-yellow/10 text-brand-yellow">Conversão</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white mb-3 tracking-tight">Web Design</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">Sites premium, portfólios impactantes e landing pages
+                  ultra-rápidas otimizadas para gerar o máximo de conversão digital.</p>
+              </div>
+              <div class="pt-6 border-t border-zinc-900/60 mt-auto">
+                <a href="#/web-design"
+                  class="inline-flex items-center text-brand-yellow text-xs font-bold hover:text-white transition-colors duration-200 group">
+                  Desenvolver Plataforma
+                  <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Design Gráfico -->
+            <div data-aos="fade-up" data-aos-delay="100"
+              class="glass-panel glass-card-hover rounded-t-[2.5rem] rounded-b-[1rem] p-8 flex flex-col justify-between h-[360px] border-t-2 border-t-brand-yellow/30">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center transition-all duration-300">
+                    <!-- Heroicon: eye -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span
+                    class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-brand-yellow/10 text-brand-yellow">Branding</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white mb-3 tracking-tight">Design Gráfico</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">Identidades visuais marcantes, logotipos premium e
+                  manual de marca completo para empresas que querem se destacar.</p>
+              </div>
+              <div class="pt-6 border-t border-zinc-900/60 mt-auto">
+                <a href="#/design-grafico"
+                  class="inline-flex items-center text-brand-yellow text-xs font-bold hover:text-white transition-colors duration-200 group">
+                  Criar Identidade
+                  <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 6: Cursos -->
+            <div data-aos="fade-up" data-aos-delay="200"
+              class="glass-panel glass-card-hover rounded-t-[2.5rem] rounded-b-[1rem] p-8 flex flex-col justify-between h-[360px] border-t-2 border-t-brand-yellow/30">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center transition-all duration-300">
+                    <!-- Heroicon: academic-cap -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z">
+                      </path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span
+                    class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 rounded-full bg-brand-yellow/10 text-brand-yellow">Educação</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white mb-3 tracking-tight">Cursos & Mentorias</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">Aprenda com especialistas os segredos da produção de
+                  conteúdo, atração de clientes e design inovador.</p>
+              </div>
+              <div class="pt-6 border-t border-zinc-900/60 mt-auto">
+                <a href="#/cursos"
+                  class="inline-flex items-center text-brand-yellow text-xs font-bold hover:text-white transition-colors duration-200 group">
+                  Acessar Academia
+                  <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-200"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Stats & CTA Section -->
+      <div class="py-20 border-t border-zinc-900 bg-zinc-950/40 relative overflow-hidden">
+        <div class="absolute inset-0 bg-radial-gradient pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center">
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 w-full max-w-5xl mb-16">
+
+            <!-- Stat 1 -->
+            <div class="text-center space-y-2 p-6 glass-panel rounded-2xl" data-aos="zoom-in">
+              <span class="block text-4xl md:text-5xl font-display font-black text-brand-yellow dynamic-counter"
+                data-target="150">+0</span>
+              <p class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Projetos Atendidos</p>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="text-center space-y-2 p-6 glass-panel rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+              <span class="block text-4xl md:text-5xl font-display font-black text-brand-yellow dynamic-counter"
+                data-target="98">0%</span>
+              <p class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Satisfação de Clientes</p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="text-center space-y-2 p-6 glass-panel rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+              <span class="block text-4xl md:text-5xl font-display font-black text-brand-yellow dynamic-counter"
+                data-target="12">0M+</span>
+              <p class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Alcance de Impressões</p>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="text-center space-y-2 p-6 glass-panel rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+              <span class="block text-4xl md:text-5xl font-display font-black text-brand-yellow dynamic-counter"
+                data-target="2500">+0</span>
+              <p class="text-zinc-400 text-xs uppercase tracking-widest font-semibold">Alunos Qualificados</p>
+            </div>
+
+          </div>
+
+          <!-- Section CTA -->
+          <div class="text-center max-w-xl space-y-6" data-aos="fade-up">
+            <h3 class="text-2xl md:text-3xl font-display font-black text-white">Pronto para colocar sua marca no topo?
+            </h3>
+            <p class="text-zinc-400 text-sm">Construa um império digital através das nossas soluções especializadas de
+              marketing e design.</p>
+            <a href="#contact"
+              class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+              Falar com Nossos Especialistas
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Methodology (Step Timeline) -->
+      <div class="py-24 border-t border-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-display font-extrabold">Como Trabalhamos</h2>
+            <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+            <p class="text-zinc-400">Um processo estratégico, refinado e orientado a resultados para transformar sua
+              visão digital em realidade comercial.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+            <!-- Background connector line on desktop -->
+            <div class="hidden md:block absolute top-[40px] left-[10%] right-[10%] h-[2px] bg-zinc-800 z-0"></div>
+
+            <!-- Step 1 -->
+            <div class="text-center space-y-4 relative z-10" data-aos="fade-up">
+              <div
+                class="w-20 h-20 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center mx-auto shadow-xl">
+                <span class="font-display font-bold text-2xl">01</span>
+              </div>
+              <h3 class="text-xl font-semibold text-white">Análise & Diagnóstico</h3>
+              <p class="text-zinc-400 text-sm max-w-xs mx-auto">Entendemos suas dores, mapeamos concorrentes e definimos
+                objetivos de mercado realistas.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="text-center space-y-4 relative z-10" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="w-20 h-20 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center mx-auto shadow-xl">
+                <span class="font-display font-bold text-2xl">02</span>
+              </div>
+              <h3 class="text-xl font-semibold text-white">Criação & Estrutura</h3>
+              <p class="text-zinc-400 text-sm max-w-xs mx-auto">Desenvolvemos o design, o conteúdo estratégico e
+                preparamos as campanhas para lançamento.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="text-center space-y-4 relative z-10" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="w-20 h-20 rounded-2xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center mx-auto shadow-xl">
+                <span class="font-display font-bold text-2xl">03</span>
+              </div>
+              <h3 class="text-xl font-semibold text-white">Aceleração</h3>
+              <p class="text-zinc-400 text-sm max-w-xs mx-auto">Publicação, otimização de tráfego, acompanhamento de
+                métricas e tração de novos clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials / Success Cases Section -->
+      <div class="py-24 border-t border-zinc-900 bg-brand-dark/20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-display font-extrabold">Parceiros de Sucesso</h2>
+            <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+            <p class="text-zinc-400">O que nossos clientes dizem sobre a jornada de transformação digital com a Panda
+              Marketing.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Testimonial 1 -->
+            <div data-aos="fade-right" class="glass-panel rounded-2xl p-8 border-l-4 border-l-brand-yellow space-y-6">
+              <p class="text-zinc-300 italic leading-relaxed text-sm">
+                "A reestruturação da minha marca pessoal foi um divisor de águas. O direcionamento estratégico da Panda
+                me posicionou como referência na minha região, atraindo clientes muito mais qualificados."
+              </p>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-full green-placeholder flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-bold text-white text-sm">Mariana Costa</h4>
+                  <p class="text-zinc-500 text-xs">Consultora de Imagem</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div data-aos="fade-left" class="glass-panel rounded-2xl p-8 border-l-4 border-l-brand-yellow space-y-6">
+              <p class="text-zinc-300 italic leading-relaxed text-sm">
+                "Nosso novo site corporativo superou as expectativas de performance. A experiência de navegação
+                desenhada pelo time de web design elevou nosso nível institucional e as conversões diárias."
+              </p>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-full green-placeholder flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-display font-bold text-white text-sm">Roberto Silveira</h4>
+                  <p class="text-zinc-500 text-xs">Diretor de Tecnologia - TechVibe</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- SERVICES VIEW (SPA PAGE) -->
+    <section id="services-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-12">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto space-y-4">
+          <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Nossas Soluções</span>
+          <h2 class="text-3xl md:text-4xl font-display font-extrabold text-white">Serviços & Soluções</h2>
+          <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+          <p class="text-zinc-400 text-sm">Explore o nosso portfólio completo de soluções integradas de marketing
+            pessoal, conteúdo, design e tecnologia.</p>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="glass-panel p-6 rounded-3xl space-y-6 max-w-4xl mx-auto border border-zinc-800">
+          <div class="space-y-2 text-left">
+            <label for="services-search" class="text-xs font-semibold uppercase tracking-wider text-zinc-400">Encontre o
+              serviço ideal para a sua marca</label>
+            <div class="relative w-full">
+              <!-- Search icon -->
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-zinc-500">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <input type="text" id="services-search"
+                class="w-full bg-zinc-950/80 border border-zinc-800/80 rounded-2xl pl-10 pr-4 py-3 text-white focus:outline-none focus:border-brand-yellow transition-all"
+                placeholder="Busque por um serviço específico... (ex: Logotipo, Landing Page, Tráfego)">
+            </div>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap gap-2 justify-center" id="services-filter-buttons">
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-brand-yellow bg-brand-yellow text-brand-black transition-all filter-btn"
+              data-category="all">Todos</button>
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 hover:border-zinc-700 transition-all filter-btn"
+              data-category="pessoal">Mkt Pessoal</button>
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 hover:border-zinc-700 transition-all filter-btn"
+              data-category="conteudo">Conteúdo</button>
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 hover:border-zinc-700 transition-all filter-btn"
+              data-category="redes">Redes Sociais</button>
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 hover:border-zinc-700 transition-all filter-btn"
+              data-category="web">Web Design</button>
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 hover:border-zinc-700 transition-all filter-btn"
+              data-category="design">Design Gráfico</button>
+            <button
+              class="px-4 py-2 text-xs font-semibold rounded-full border border-zinc-800 bg-zinc-900 text-zinc-300 hover:border-zinc-700 transition-all filter-btn"
+              data-category="cursos">Cursos & Mentoria</button>
+          </div>
+        </div>
+
+        <!-- Grid Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6" id="services-cards-grid">
+
+          <!-- Marketing Pessoal Cards -->
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="pessoal"
+            data-keywords="marketing pessoal branding pessoal perfil linkedin instagram bio foto autoridade">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Marketing
+                Pessoal</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Branding & Perfil Estratégico</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed line-clamp-4">Otimização completa do seu posicionamento e
+                perfis no LinkedIn e Instagram. Revisão de biografias, fotos e proposta de valor clara.</p>
+            </div>
+            <a href="#/marketing-pessoal"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="pessoal"
+            data-keywords="storytelling narrativa palestra entrevista pitch de negocios comunicacao">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Marketing
+                Pessoal</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Storytelling Profissional</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed line-clamp-4">Criação de narrativas de carreira
+                impactantes e personalizadas para entrevistas, palestras ou apresentações comerciais.</p>
+            </div>
+            <a href="#/marketing-pessoal"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Marketing de Conteúdo Cards -->
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="conteudo"
+            data-keywords="marketing de conteudo artigos blog newsletter e-books copywriting inbound seo leads">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Marketing
+                de Conteúdo</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Copywriting & Redação</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed line-clamp-4">Textos persuasivos desenhados com técnicas
+                de neuromarketing para blogs, e-books e funis de vendas, otimizados para SEO e nutrição de leads.</p>
+            </div>
+            <a href="#/marketing-conteudo"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Redes Sociais Cards -->
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="redes"
+            data-keywords="gestao de redes sociais postagens publicacoes instagram facebook meta tiktok posts semana">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Redes
+                Sociais</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Gestão de Posts (a partir de 3x/semana)
+              </h3>
+              <p class="text-zinc-400 text-xs leading-relaxed line-clamp-4">Planos completos e estruturação de
+                calendários editoriais para postagens periódicas em mídias digitais e comunidades.</p>
+            </div>
+            <a href="#/redes-sociais"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="redes"
+            data-keywords="trafego pago social ads anuncios patrocinados facebook instagram tiktok google ads">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Redes
+                Sociais</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Social Ads (Tráfego Pago)</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed line-clamp-4">Gestão, testes e otimização de anúncios e
+                campanhas pagas nas redes focadas em captação de leads e aumento direto de vendas.</p>
+            </div>
+            <a href="#/redes-sociais"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Web Design Cards -->
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="web"
+            data-keywords="web design site institucional landing page blog ecommerce loja virtual sistemas internos figma ux ui html">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Web
+                Design</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Criação de Sites & Landing Pages</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed">Desenvolvimento completo de interfaces rápidas e
+                adaptativas no Figma: sites institucionais, blogs, lojas virtuais (e-commerce), landing pages de vendas
+                e sistemas internos.</p>
+            </div>
+            <a href="#/web-design"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Design Gráfico Cards -->
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="design"
+            data-keywords="design grafico logotipo manual de identidade visual branding mascote slogan lettering wordmark combinationmark emblema">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Design
+                Gráfico</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Identidade Visual & Branding</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed">Desenho e vetorização de logotipo, manual de marca,
+                tipografia (lettering/fonts), monogramas, mascotes corporativos e slogans estratégicos de impacto.</p>
+            </div>
+            <a href="#/design-grafico"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="design"
+            data-keywords="design grafico producao papelaria corporativo impressos folders cartoes visitas flyers tags sacolas adesivos cardapio planners catalogos banner">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Design
+                Gráfico</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Papelaria & Materiais Promocionais</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed">Produção visual de cartões (físicos/digitais), timbrados,
+                envelopes, sacolas, blocos de notas, pastas, cardápios, planners, adesivos, catálogos
+                (impresso/WhatsApp) e banners.</p>
+            </div>
+            <a href="#/design-grafico"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Cursos & Mentoria Cards -->
+          <div
+            class="p-6 glass-panel rounded-2xl flex flex-col justify-between h-[280px] border-t-2 border-t-brand-yellow/30 service-item-card transition-all duration-300"
+            data-categories="cursos"
+            data-keywords="cursos mentoria individual posicionamento premium marketing digital express aulas aulas gravadas">
+            <div>
+              <span
+                class="text-[9px] uppercase tracking-widest font-semibold px-2 py-0.5 rounded-full bg-brand-yellow/10 text-brand-yellow w-max">Cursos
+                & Mentoria</span>
+              <h3 class="text-lg font-bold font-display text-white mt-4 mb-2">Mentoria Premium & Academia</h3>
+              <p class="text-zinc-400 text-xs leading-relaxed">Imersão de marketing digital com aulas gravadas completas
+                ou acompanhamento individual por 3 meses para consolidar o posicionamento de executivos.</p>
+            </div>
+            <a href="#/cursos"
+              class="text-brand-yellow text-xs font-bold hover:text-white mt-4 flex items-center transition-colors">
+              Ver Detalhes <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 2. MARKETING PESSOAL VIEW -->
+    <section id="marketing-pessoal-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Back Button -->
+        <a href="#/home"
+          class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Voltar para Início
+        </a>
+
+        <!-- Service Hero -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Estratégia de
+              Posicionamento</span>
+            <h2 class="text-4xl sm:text-5xl font-display font-black text-white leading-tight">Marketing Pessoal</h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              Sua carreira decolará quando você se transformar em uma marca memorável. Ajudamos profissionais a moldarem
+              a forma como o mercado os percebe. Através de diagnósticos, redesenho de perfil digital e alinhamento de
+              narrativas de sucesso.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">+40%</span>
+                <span class="text-xs text-zinc-400">Valor de Consulta/Mentoria</span>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">100%</span>
+                <span class="text-xs text-zinc-400">Autoridade Reforçada</span>
+              </div>
+            </div>
+          </div>
+          <div class="green-placeholder aspect-[4/3] rounded-2xl flex flex-col justify-end p-8">
+            <span
+              class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow w-max">Portfólio
+              de Imagem</span>
+          </div>
+        </div>
+
+        <!-- Deep-dive details -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nosso Plano de Ação</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">01 / Perfil Estratégico</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Análise detalhada de perfis no LinkedIn e Instagram, com
+                reestruturação completa de biografias, fotos e propostas de valor.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">02 / Storytelling Profissional</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Criação da sua narrativa de carreira exclusiva para
+                palestras, entrevistas, reuniões de venda ou pitches de negócios.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">03 / Networking de Valor</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Treinamento exclusivo para ativação de conexões
+                corporativas de alto escalão e parcerias produtivas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="pt-12 text-center border-t border-zinc-900/60" data-aos="fade-up">
+          <h4 class="text-xl font-bold font-display text-white mb-4">Pronto para se posicionar como líder no seu
+            segmento?</h4>
+          <a href="#contact"
+            class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+            Fale com um Especialista e Comece Agora
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 3. MARKETING DE CONTEUDO VIEW -->
+    <section id="marketing-conteudo-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Back Button -->
+        <a href="#/home"
+          class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Voltar para Início
+        </a>
+
+        <!-- Service Hero -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Nutrição de Leads & SEO</span>
+            <h2 class="text-4xl sm:text-5xl font-display font-black text-white leading-tight">Marketing de Conteúdo</h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              Conteúdo de qualidade atrai, educa e converte. Mais do que postagens, nós criamos ecossistemas
+              informativos (blogs, e-books, copywriting para funis de venda) que educam sua audiência e respondem às
+              principais dores de seus clientes.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">3x</span>
+                <span class="text-xs text-zinc-400">Mais visitas orgânicas</span>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">50%</span>
+                <span class="text-xs text-zinc-400">Redução no Custo de Aquisição</span>
+              </div>
+            </div>
+          </div>
+          <div class="green-placeholder aspect-[4/3] rounded-2xl flex flex-col justify-end p-8">
+            <span
+              class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow w-max">Redação
+              & Inbound</span>
+          </div>
+        </div>
+
+        <!-- Details -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nosso Processo Editorial</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Pesquisa de Palavras-Chave</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Identificamos o que seu público-alvo busca ativamente no
+                Google para desenhar pautas assertivas.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Copywriting Premium</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Textos escritos com técnicas de persuasão
+                (neuromarketing) sem perder o profissionalismo e profundidade acadêmica.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Distribuição & SEO</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Otimização técnica (On-page SEO) para que seus artigos
+                fiquem no topo dos mecanismos de pesquisa.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefícios do Marketing de Conteúdo -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Benefícios Estratégicos</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Mais Tráfego Orgânico</h4>
+                <p class="text-zinc-400 text-xs mt-1">Aumente o fluxo de visitantes qualificados e recorrentes para o
+                  seu site.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Brand Awareness</h4>
+                <p class="text-zinc-400 text-xs mt-1">Torne sua marca reconhecida, lembrada e respeitada no mercado.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Maior Engajamento</h4>
+                <p class="text-zinc-400 text-xs mt-1">Crie conexões profundas e aumente a interação do público com sua
+                  marca.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Educação do Mercado</h4>
+                <p class="text-zinc-400 text-xs mt-1">Oriente o cliente sobre as suas necessidades e as soluções que
+                  você oferece.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Geração de Vendas</h4>
+                <p class="text-zinc-400 text-xs mt-1">Conduza leads pelo funil de compras e impulsione as taxas de
+                  conversão.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Geração de Leads</h4>
+                <p class="text-zinc-400 text-xs mt-1">Atraia contatos qualificados e construa bases ricas para
+                  prospecção.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Aumento do LTV</h4>
+                <p class="text-zinc-400 text-xs mt-1">Estenda o tempo de relacionamento e o valor gasto pelo cliente com
+                  sua marca.</p>
+              </div>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl flex items-start space-x-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-white text-sm">Redução do CAC</h4>
+                <p class="text-zinc-400 text-xs mt-1">Diminua o custo médio investido para conquistar cada novo cliente.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="pt-12 text-center border-t border-zinc-900/60" data-aos="fade-up">
+          <h4 class="text-xl font-bold font-display text-white mb-4">Pronto para atrair mais clientes qualificados
+            organicamente?</h4>
+          <a href="#contact"
+            class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+            Quero Criar Minha Estratégia de Conteúdo
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 4. REDES SOCIAIS VIEW -->
+    <section id="redes-sociais-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Back Button -->
+        <a href="#/home"
+          class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Voltar para Início
+        </a>
+
+        <!-- Service Hero -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Engajamento & Anúncios</span>
+            <h2 class="text-4xl sm:text-5xl font-display font-black text-white leading-tight">Gestão de Redes Sociais
+            </h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              Sua comunidade ativa e engajada. Criamos conteúdo visualmente marcante, elaboramos calendários de posts
+              periódicos, realizamos monitoramento ativo de mensagens e administramos campanhas de tráfego pago focadas
+              em conversão.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">+200%</span>
+                <span class="text-xs text-zinc-400">Taxa de Engajamento Médio</span>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">+15k</span>
+                <span class="text-xs text-zinc-400">Leads Gerados via Social Ads</span>
+              </div>
+            </div>
+
+            <div
+              class="w-full mt-2 p-4 rounded-xl bg-brand-yellow/10 border border-brand-yellow/20 flex items-center space-x-3 text-left">
+              <svg class="w-5 h-5 text-brand-yellow flex-shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span class="text-xs text-zinc-300">Oferecemos planos de ações e gestão de redes sociais a partir de
+                <strong>3 postagens por semana</strong>.</span>
+            </div>
+          </div>
+          <div class="green-placeholder aspect-[4/3] rounded-2xl flex flex-col justify-end p-8">
+            <span
+              class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow w-max">Gestão
+              de Comunidades</span>
+          </div>
+        </div>
+
+        <!-- Details -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nosso Escopo Completo</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Calendário de Conteúdo</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Estruturação de datas, pilares de conteúdo e formatos que
+                equilibram engajamento orgânico com posts comerciais.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Social Ads (Tráfego Pago)</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Gestão estratégica de anúncios pagos no Meta Ads
+                (Instagram/Facebook) e TikTok Ads direcionados para vendas.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Relatórios Mensais</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Métricas claras com análises profundas de alcance,
+                crescimento de seguidores, cliques e ROI real.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfólio de Redes Sociais -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nosso Portfólio</h3>
+          <div
+            class="p-12 glass-panel rounded-3xl text-center space-y-6 max-w-2xl mx-auto flex flex-col items-center justify-center border border-dashed border-zinc-800">
+            <div
+              class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-600 flex items-center justify-center">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-display font-bold text-white text-lg">Projetos em Produção</h4>
+              <p class="text-zinc-500 text-sm max-w-md mx-auto">Nossos cases mais recentes e resultados de campanhas de
+                redes sociais estão sendo preparados. Em breve você poderá explorar as criações do nosso time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="pt-12 text-center border-t border-zinc-900/60" data-aos="fade-up">
+          <h4 class="text-xl font-bold font-display text-white mb-4">Pronto para escalar seu engajamento e gerar mais
+            vendas?</h4>
+          <a href="#contact"
+            class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+            Quero Alavancar Minhas Redes Sociais
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 5. WEB DESIGN VIEW -->
+    <section id="web-design-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Back Button -->
+        <a href="#/home"
+          class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Voltar para Início
+        </a>
+
+        <!-- Service Hero -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Desenvolvimento Web
+              Premium</span>
+            <h2 class="text-4xl sm:text-5xl font-display font-black text-white leading-tight">Web Design</h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              Seu site é sua vitrine para o mundo. Unimos o melhor do design moderno (interfaces fluidas, UX minimalista
+              e animações elegantes) com desenvolvimento de alta performance focado em acessibilidade, velocidade de
+              carregamento extrema e SEO integrado de ponta.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">&lt;1.2s</span>
+                <span class="text-xs text-zinc-400">Tempo de Carregamento Médio</span>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">100%</span>
+                <span class="text-xs text-zinc-400">Otimizado para Dispositivos Móveis</span>
+              </div>
+            </div>
+          </div>
+          <div class="green-placeholder aspect-[4/3] rounded-2xl flex flex-col justify-end p-8">
+            <span
+              class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow w-max">Interfaces
+              & UX</span>
+          </div>
+        </div>
+
+        <!-- Nossas Soluções -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nossas Soluções</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+            <div
+              class="p-6 glass-panel rounded-2xl flex flex-col justify-between items-center text-center space-y-4 hover:border-brand-yellow/30 transition-all duration-300">
+              <div class="w-10 h-10 rounded-xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-sm">Sites Institucionais</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Presença online sólida e de alta credibilidade para a sua
+                empresa.</p>
+            </div>
+
+            <div
+              class="p-6 glass-panel rounded-2xl flex flex-col justify-between items-center text-center space-y-4 hover:border-brand-yellow/30 transition-all duration-300">
+              <div class="w-10 h-10 rounded-xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-sm">Blogs</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Portais otimizados para publicação de conteúdo e atração
+                de tráfego orgânico.</p>
+            </div>
+
+            <div
+              class="p-6 glass-panel rounded-2xl flex flex-col justify-between items-center text-center space-y-4 hover:border-brand-yellow/30 transition-all duration-300">
+              <div class="w-10 h-10 rounded-xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-sm">E-commerce</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Lojas virtuais seguras, rápidas e focadas na melhor
+                experiência de compra.</p>
+            </div>
+
+            <div
+              class="p-6 glass-panel rounded-2xl flex flex-col justify-between items-center text-center space-y-4 hover:border-brand-yellow/30 transition-all duration-300">
+              <div class="w-10 h-10 rounded-xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-sm">Landing Pages</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Páginas de conversão de alta performance voltadas para
+                campanhas de vendas.</p>
+            </div>
+
+            <div
+              class="p-6 glass-panel rounded-2xl flex flex-col justify-between items-center text-center space-y-4 hover:border-brand-yellow/30 transition-all duration-300">
+              <div class="w-10 h-10 rounded-xl bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-sm">Sistemas Internos</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Plataformas e dashboards customizados sob medida para sua
+                operação.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Details -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nossos Diferenciais Técnicos</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Design Exclusivo Figma</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Não trabalhamos com templates genéricos. Desenhamos a
+                interface no Figma especificamente para sua marca e aprovação prévia.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Otimização SEO (Core Web Vitals)</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Códigos limpos, sem excessos de plugins, garantindo nota
+                máxima em velocidade de carregamento e melhor ranking no Google.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 space-y-4">
+              <span class="text-brand-yellow font-bold">Tecnologia Adaptativa</span>
+              <p class="text-zinc-400 text-sm leading-relaxed">Visualização impecável e responsividade perfeita em todas
+                as telas: smartphones, tablets, notebooks e televisões.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfólio de Projetos -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nosso Portfólio</h3>
+          <div
+            class="p-12 glass-panel rounded-3xl text-center space-y-6 max-w-2xl mx-auto flex flex-col items-center justify-center border border-dashed border-zinc-800">
+            <div
+              class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-600 flex items-center justify-center">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-display font-bold text-white text-lg">Projetos em Produção</h4>
+              <p class="text-zinc-500 text-sm max-w-md mx-auto">Nossos cases mais recentes e designs customizados estão
+                sendo preparados. Em breve você poderá explorar as interfaces criadas pelo nosso time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="pt-12 text-center border-t border-zinc-900/60" data-aos="fade-up">
+          <h4 class="text-xl font-bold font-display text-white mb-4">Pronto para ter um site premium, rápido e de alta
+            conversão?</h4>
+          <a href="#contact"
+            class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+            Quero Desenvolver Meu Novo Site
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 6. DESIGN GRAFICO VIEW -->
+    <section id="design-grafico-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Back Button -->
+        <a href="#/home"
+          class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Voltar para Início
+        </a>
+
+        <!-- Service Hero -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Branding & Identidade
+              Visual</span>
+            <h2 class="text-4xl sm:text-5xl font-display font-black text-white leading-tight">Design Gráfico</h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              Sua marca precisa falar antes de você. Nosso estúdio de design gráfico premium cria identidades
+              corporativas marcantes, logotipos autênticos, peças publicitárias exclusivas e embalagens integradas que
+              refletem a alma do seu negócio.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">30+</span>
+                <span class="text-xs text-zinc-400">Identidades Visuais Criadas</span>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">100%</span>
+                <span class="text-xs text-zinc-400">Materiais Vetoriais de Alta Definição</span>
+              </div>
+            </div>
+          </div>
+          <div class="green-placeholder aspect-[4/3] rounded-2xl flex flex-col justify-end p-8">
+            <span
+              class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow w-max">Identidades
+              & Logotipos</span>
+          </div>
+        </div>
+
+        <!-- Serviços e Elementos de Identidade Visual -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-2 text-center">Identidade Visual</h3>
+          <p class="text-zinc-500 text-sm text-center mb-8 max-w-xl mx-auto">Desenvolvemos o ecossistema completo de
+            elementos visuais para consolidar a autoridade da sua marca.</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">01 / Logotipo</span>
+              <h4 class="font-display font-bold text-white text-sm">Logotipo</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">A representação gráfica principal e assinatura visual
+                oficial da sua marca.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">02 / Lettering & Fontes</span>
+              <h4 class="font-display font-bold text-white text-sm">LetteringFont</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Desenho de letras sob medida e seleção tipográfica
+                exclusiva para sua comunicação.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">03 / Lettermark</span>
+              <h4 class="font-display font-bold text-white text-sm">Lettermark</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Representações visuais baseadas em iniciais ou monogramas
+                sofisticados.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">04 / Ícones</span>
+              <h4 class="font-display font-bold text-white text-sm">Símbolo ou Ícone</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Símbolos gráficos memoráveis que identificam o negócio de
+                forma isolada.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">05 / WordMark</span>
+              <h4 class="font-display font-bold text-white text-sm">WordMark</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Logotipos focados inteiramente no design estilizado do
+                texto com o nome da marca.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">06 / CombinationMark</span>
+              <h4 class="font-display font-bold text-white text-sm">CombinationMark</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">A união perfeita e integrada de um símbolo marcante com
+                uma tipografia estilizada.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">07 / Emblemas</span>
+              <h4 class="font-display font-bold text-white text-sm">Emblema</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Logotipos com texto emoldurado dentro de símbolos,
+                brasões ou insígnias clássicas.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-2 hover:border-brand-yellow/30 transition-all">
+              <span class="text-brand-yellow font-bold text-xs uppercase tracking-wider">08 / Letter Stacking</span>
+              <h4 class="font-display font-bold text-white text-sm">Letter Stacking</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Técnica moderna de empilhamento visual e arranjo criativo
+                de caracteres.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Entregas e Ativos Adicionais -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Ativos e Entregas Inclusas</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="p-6 glass-panel rounded-2xl space-y-3 border-t-2 border-brand-yellow/30">
+              <div class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-base">Manual de Identidade Visual</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Documentação de regras de aplicação do logotipo, paleta
+                de cores institucional, tipografia de apoio e padrões gráficos definidos.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-3 border-t-2 border-brand-yellow/30">
+              <div class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-base">Mascotes Personalizados</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Criação de mascote oficial humanizado ou abstrato para
+                estreitar a conexão emocional com sua audiência.</p>
+            </div>
+
+            <div class="p-6 glass-panel rounded-2xl space-y-3 border-t-2 border-brand-yellow/30">
+              <div class="w-8 h-8 rounded-lg bg-brand-yellow/10 text-brand-yellow flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                  </path>
+                </svg>
+              </div>
+              <h4 class="font-display font-bold text-white text-base">Slogans de Impacto</h4>
+              <p class="text-zinc-400 text-xs leading-relaxed">Desenvolvimento da frase ou lema estratégico oficial que
+                sintetiza os valores essenciais da sua marca de forma memorável.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- O Que Podemos Produzir -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-2 text-center">Nesta Área Podemos Produzir</h3>
+          <p class="text-zinc-500 text-sm text-center mb-8 max-w-xl mx-auto">Soluções completas em design impresso e
+            digital para destacar sua marca em todos os pontos de contato.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Categoria 1 -->
+            <div class="p-6 glass-panel rounded-2xl space-y-4">
+              <div class="flex items-center space-x-2 text-brand-yellow">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                </svg>
+                <h4 class="font-display font-bold text-white text-base">Corporativo</h4>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Cartões de
+                  Visitas</span>
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Cartões
+                  Digitais</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Pastas</span>
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Papel
+                  Timbrado</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Envelopes</span>
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Bloco de
+                  Notas</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Assinaturas de
+                  E-mails</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Recibos</span>
+              </div>
+            </div>
+
+            <!-- Categoria 2 -->
+            <div class="p-6 glass-panel rounded-2xl space-y-4">
+              <div class="flex items-center space-x-2 text-brand-yellow">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                </svg>
+                <h4 class="font-display font-bold text-white text-base">Promocional</h4>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Filipetas
+                  e Folders</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Adesivos</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Sacolas</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Rótulos</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Etiquetas</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Cartazes</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Banners</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Testeiras</span>
+              </div>
+            </div>
+
+            <!-- Categoria 3 -->
+            <div class="p-6 glass-panel rounded-2xl space-y-4">
+              <div class="flex items-center space-x-2 text-brand-yellow">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                  </path>
+                </svg>
+                <h4 class="font-display font-bold text-white text-base">Editoriais & Digitais</h4>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Catálogos</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Livretos</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Livros</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">E-books</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Apostilas</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Apresentações
+                  PPT</span>
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Catálogos
+                  WhatsApp</span>
+              </div>
+            </div>
+
+            <!-- Categoria 4 -->
+            <div class="p-6 glass-panel rounded-2xl space-y-4">
+              <div class="flex items-center space-x-2 text-brand-yellow">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                  </path>
+                </svg>
+                <h4 class="font-display font-bold text-white text-base">Especiais</h4>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Cardápios</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Planners</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Calendários</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Receituários</span>
+                <span class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Cartões
+                  Postais</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Convites</span>
+                <span
+                  class="px-2.5 py-1 bg-zinc-950 border border-zinc-900 text-zinc-300 text-xs rounded-md">Quadros</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Portfólio de Design Gráfico -->
+        <div class="border-t border-zinc-800/60 pt-16">
+          <h3 class="text-2xl font-bold font-display text-white mb-8 text-center">Nosso Portfólio</h3>
+          <div
+            class="p-12 glass-panel rounded-3xl text-center space-y-6 max-w-2xl mx-auto flex flex-col items-center justify-center border border-dashed border-zinc-800">
+            <div
+              class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-600 flex items-center justify-center">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+              </svg>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-display font-bold text-white text-lg">Projetos em Produção</h4>
+              <p class="text-zinc-500 text-sm max-w-md mx-auto">Nossos logotipos mais recentes e identidades visuais
+                corporativas completas estão sendo preparados. Em breve você poderá explorar as artes criadas pelo nosso
+                estúdio.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="pt-12 text-center border-t border-zinc-900/60" data-aos="fade-up">
+          <h4 class="text-xl font-bold font-display text-white mb-4">Pronto para dar à sua marca a identidade visual que
+            ela merece?</h4>
+          <a href="#contact"
+            class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+            Quero Criar Minha Identidade Visual
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 7. CURSOS VIEW -->
+    <section id="cursos-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Back Button -->
+        <a href="#/home"
+          class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Voltar para Início
+        </a>
+
+        <!-- Service Hero -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start w-full">
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Academia de Conhecimento</span>
+            <h2 class="text-4xl sm:text-5xl font-display font-black text-white leading-tight">Nossos Cursos & Mentorias
+            </h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              O conhecimento prático que você precisa para dominar o mercado digital. Criamos programas educacionais de
+              imersão completa e mentorias estratégicas individuais focadas em levar seu negócio ou carreira ao próximo
+              patamar.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">1.200+</span>
+                <span class="text-xs text-zinc-400">Alunos Formados</span>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+                <span class="block text-2xl font-bold font-display text-brand-yellow">4.8 / 5</span>
+                <span class="text-xs text-zinc-400">Avaliação Média Geral</span>
+              </div>
+            </div>
+          </div>
+          <div class="green-placeholder aspect-[4/3] rounded-2xl flex flex-col justify-end p-8">
+            <span
+              class="px-4 py-1.5 rounded-full bg-brand-black/40 backdrop-blur-md text-[10px] tracking-wider uppercase font-semibold text-brand-yellow w-max">Aulas
+              Práticas</span>
+          </div>
+        </div>
+
+        <!-- Course Cards -->
+        <div class="border-t border-zinc-800/60 pt-16 space-y-8">
+          <h3 class="text-2xl font-bold font-display text-white text-center">Nossos Programas Disponíveis</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+            <!-- Curso 1: Consultoria em Vendas -->
+            <div class="course-card p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700/80 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-yellow-400/10 text-brand-yellow text-xs font-semibold">Consultoria & Mentoria</span>
+                  <span class="text-xs text-zinc-500">Presencial ou Online</span>
+                </div>
+                <h4 class="text-2xl font-bold font-display text-white mt-4 mb-2">Consultoria em Vendas</h4>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                  Aprimore a experiência de seus clientes e desenvolva recursos para ouvir, compreender e negociar com alto valor.
+                </p>
+
+                <!-- Detailed Content (Hidden by default, expands on click) -->
+                <div class="course-details">
+                  <div class="space-y-4 text-zinc-300 text-sm leading-relaxed">
+                    <p>
+                      <strong>Como aumentar as minhas vendas?</strong> Com base em técnicas e práticas que podem ser aplicadas em qualquer ramo de atividade, é possível aprimorar a experiência de seus clientes e parceiros, facilitando a geração de novos negócios.
+                    </p>
+                    <p>
+                      Como captar atenção do meu futuro cliente? Como saber o que ele realmente quer? Em que momento eu devo dizer meu preço? Nesse curso, o participante mergulhará no universo de acordos comerciais desenvolvendo recursos internos para ouvir e compreender as necessidades de seu potencial cliente e estabelecer uma relação de negócios em que todos saiam ganhando.
+                    </p>
+
+                    <div class="pt-4 border-t border-zinc-800/80">
+                      <h5 class="text-white font-bold font-display text-base mb-3">Conteúdo Programático</h5>
+                      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-zinc-400">
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Perfis de vendedores e de clientes</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Perfis Comportamentais e Linguagens do Amor nas vendas</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Linguagem corporal</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Técnicas de cumprimento</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Etiqueta corporativa</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Técnicas de negociação e apresentação de valores</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Vendas de baixo atrito, upsell e vendas cruzadas</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Técnica do Preço-Coelho</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Importância do networking</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Estabelecendo e alcançando metas</li>
+                        <li class="flex items-start"><span class="text-brand-yellow mr-2">•</span> Mantendo a cabeça fria: como trabalhar sob pressão</li>
+                      </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-zinc-800/80 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                      <div>
+                        <span class="block text-zinc-500 uppercase font-bold tracking-wider">Duração</span>
+                        <span class="text-white font-semibold">6 horas</span>
+                      </div>
+                      <div>
+                        <span class="block text-zinc-500 uppercase font-bold tracking-wider">Público-alvo</span>
+                        <span class="text-white font-semibold">Profissionais em geral que buscam melhores resultados e parcerias.</span>
+                      </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-zinc-800/80 space-y-2 text-xs">
+                      <span class="block text-zinc-500 uppercase font-bold tracking-wider">Formatos e Variações</span>
+                      <div class="bg-zinc-950/50 p-3 rounded-lg border border-zinc-800 space-y-2">
+                        <div class="flex justify-between items-center">
+                          <span class="text-zinc-300 font-medium">Curso para equipe de vendas</span>
+                          <span class="text-brand-yellow font-semibold">4h online/presencial</span>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-zinc-900/60 pt-2">
+                          <span class="text-zinc-300 font-medium">Marketing pessoal e Vendas</span>
+                          <span class="text-brand-yellow font-semibold">4h online/presencial</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between pt-6 border-t border-zinc-800/60 mt-6 gap-4">
+                <button class="course-toggle-btn px-5 py-2.5 rounded-xl border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-700 font-semibold text-sm transition-all flex items-center space-x-2">
+                  <span class="btn-text">Saiba Mais</span>
+                  <svg class="btn-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <a href="#contact" class="px-6 py-2.5 rounded-xl bg-brand-yellow text-brand-black hover:bg-brand-yellow-hover font-semibold text-sm transition-all">
+                  Entrar em Contato
+                </a>
+              </div>
+            </div>
+
+            <!-- Curso 2: Consultoria em Imagem -->
+            <div class="course-card p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700/80 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="px-3 py-1 rounded-full bg-emerald-400/10 text-emerald-400 text-xs font-semibold">Posicionamento & Estilo</span>
+                  <span class="text-xs text-zinc-500">Presencial ou Online</span>
+                </div>
+                <h4 class="text-2xl font-bold font-display text-white mt-4 mb-2">Consultoria em Imagem</h4>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                  Cuidar de seu marketing pessoal é fundamental para transmitir a imagem correta para seus clientes e colaboradores.
+                </p>
+
+                <!-- Detailed Content (Hidden by default, expands on click) -->
+                <div class="course-details">
+                  <div class="space-y-4 text-zinc-300 text-sm leading-relaxed">
+                    <p>
+                      Cuidar de seu marketing pessoal é fundamental para todos os profissionais que desejam transmitir a imagem correta para seus clientes e colaboradores. Usando diversas técnicas e conceitos práticos para o seu dia a dia, esse curso apresenta de forma leve e dinâmica, formas de se comunicar com eficiência. Como expressar a minha personalidade? Qual a melhor forma de me apresentar e transmitir meu conhecimento pessoalmente e online? O que vestir para causar uma boa impressão?
+                    </p>
+                    <p>
+                      Com conhecimentos de diversas áreas, o participante ao final desse curso terá recursos para projetar os conceitos desejados para suas relações no trabalho, atuais e futuras, auxiliando na conquista de seus objetivos.
+                    </p>
+
+                    <div class="pt-4 border-t border-zinc-800/80">
+                      <h5 class="text-white font-bold font-display text-base mb-3">Conteúdo Programático</h5>
+                      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-zinc-400">
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Consultoria de imagem e estilo</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Ferramentas de autoconhecimento e conhecimento dos outros</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Gestão de tempo</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Dinâmica das relações empáticas</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Colorimetria</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Uso das redes sociais</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">•</span> Sugestões de fotografia</li>
+                      </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-zinc-800/80 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                      <div>
+                        <span class="block text-zinc-500 uppercase font-bold tracking-wider">Duração</span>
+                        <span class="text-white font-semibold">4 horas</span>
+                      </div>
+                      <div>
+                        <span class="block text-zinc-500 uppercase font-bold tracking-wider">Público-alvo</span>
+                        <span class="text-white font-semibold">Profissionais em geral que desejam desenvolver sua comunicação interpessoal.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between pt-6 border-t border-zinc-800/60 mt-6 gap-4">
+                <button class="course-toggle-btn px-5 py-2.5 rounded-xl border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-700 font-semibold text-sm transition-all flex items-center space-x-2">
+                  <span class="btn-text">Saiba Mais</span>
+                  <svg class="btn-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <a href="#contact" class="px-6 py-2.5 rounded-xl bg-brand-yellow text-brand-black hover:bg-brand-yellow-hover font-semibold text-sm transition-all">
+                  Entrar em Contato
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="pt-12 text-center border-t border-zinc-900/60" data-aos="fade-up">
+          <h4 class="text-xl font-bold font-display text-white mb-4">Dúvidas sobre qual o melhor treinamento para você?
+          </h4>
+          <a href="#contact"
+            class="btn-premium px-8 py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold inline-block transition-all">
+            Fale com um Consultor de Carreira
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. BLOG VIEW -->
+    <section id="blog-view" class="spa-view hidden-view">
+      <div class="max-w-6xl mx-auto px-6 py-12 space-y-12">
+
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-zinc-800 pb-8">
+          <div>
+            <span class="text-xs uppercase font-bold tracking-widest text-brand-yellow">Conteúdo & Opinião</span>
+            <h2 class="text-3xl md:text-4xl font-display font-black text-white mt-2">Nosso Blog</h2>
+            <p class="text-zinc-400 text-sm mt-2">Insights, estratégias e novidades sobre o mundo do marketing digital e
+              posicionamento.</p>
+          </div>
+        </div>
+
+        <!-- 8.1. ARTICLES TAB CONTENT -->
+        <div id="blog-articles-tab" class="space-y-12">
+          <!-- Main Blog Grid -->
+          <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dynamically Rendered Articles -->
+          </div>
+        </div>
+
+        <!-- 8.2. READING PANE (HIDDEN BY DEFAULT) -->
+        <div id="blog-reading-pane" class="hidden space-y-8 max-w-3xl mx-auto">
+          <button id="blog-back-to-grid"
+            class="inline-flex items-center text-zinc-400 hover:text-brand-yellow text-sm font-medium transition-colors">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Voltar para Artigos
+          </button>
+
+          <article class="space-y-6">
+            <div class="space-y-2">
+              <span id="read-article-date" class="text-xs text-brand-yellow font-medium"></span>
+              <h1 id="read-article-title"
+                class="text-2xl sm:text-3xl md:text-4xl font-display font-black text-white leading-tight"></h1>
+              <div class="flex items-center space-x-3 text-xs text-zinc-500 pt-2">
+                <span>Por <strong class="text-zinc-300">Panda Team</strong></span>
+                <span>•</span>
+                <span id="read-article-category"
+                  class="uppercase tracking-wider font-semibold text-brand-yellow/80"></span>
+              </div>
+            </div>
+
+            <div id="read-article-image" class="green-placeholder w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl">
+            </div>
+
+            <div id="read-article-content" class="text-zinc-300 leading-relaxed space-y-4 pt-4 text-base">
+              <!-- Content goes here -->
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-24 border-t border-zinc-900 relative">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <h2 class="text-3xl md:text-4xl font-display font-extrabold">Inicie sua Transformação</h2>
+        <div class="w-16 h-1 bg-brand-yellow mx-auto rounded-full"></div>
+        <p class="text-zinc-400">Conte-nos sobre seus objetivos e como podemos te ajudar a construir uma marca forte e
+          lucrativa.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+
+        <!-- Info Column (Left) -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-12 p-8 md:p-12 glass-panel rounded-3xl"
+          data-aos="fade-right">
+          <div class="space-y-8">
+            <h3 class="text-2xl font-display font-black text-white">Canais de Contato</h3>
+
+            <div class="space-y-6">
+              <!-- Phone -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="block text-[10px] uppercase tracking-wider text-zinc-500 font-bold">WhatsApp /
+                    Telefone</span>
+                  <a href="https://wa.me/5511941704898" target="_blank"
+                    class="text-white hover:text-brand-yellow transition-colors font-medium">(11) 9 4170-4898</a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="block text-[10px] uppercase tracking-wider text-zinc-500 font-bold">E-mail</span>
+                  <a href="mailto:oi@pandapanda.com.br"
+                    class="text-white hover:text-brand-yellow transition-colors font-medium">oi@pandapanda.com.br</a>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="block text-[10px] uppercase tracking-wider text-zinc-500 font-bold">Endereço</span>
+                  <p class="text-white text-sm leading-relaxed font-medium">Rua Aureliano Guimarães, 172<br>CJ:117 -
+                    Morumbi - São Paulo - SP</p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-brand-yellow flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="block text-[10px] uppercase tracking-wider text-zinc-500 font-bold">Horário de
+                    Funcionamento</span>
+                  <p class="text-white text-sm font-medium">Seg a sexta - 9hs as 18h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social media -->
+          <div class="space-y-4">
+            <span class="block text-[10px] uppercase tracking-wider text-zinc-500 font-bold">Redes Sociais</span>
+            <div class="flex items-center space-x-4">
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/pandamarketingestrategico/" target="_blank"
+                class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-brand-yellow hover:border-brand-yellow/30 flex items-center justify-center transition-all"
+                aria-label="Instagram">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="currentColor" stroke-width="1.8">
+                  </rect>
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/company/panda-mkt/" target="_blank"
+                class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-brand-yellow hover:border-brand-yellow/30 flex items-center justify-center transition-all"
+                aria-label="LinkedIn">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/pandapanda.com.br" target="_blank"
+                class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-brand-yellow hover:border-brand-yellow/30 flex items-center justify-center transition-all"
+                aria-label="Facebook">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Column (Right) -->
+        <div class="lg:col-span-7 glass-panel rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden"
+          data-aos="fade-up">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-brand-yellow/10 rounded-full blur-2xl"></div>
+
+          <form id="contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label for="name" class="text-xs font-semibold uppercase tracking-wider text-zinc-400">Seu Nome</label>
+                <input type="text" id="name" required
+                  class="w-full bg-zinc-950/80 border border-zinc-800/80 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow transition-all"
+                  placeholder="Digite seu nome completo">
+              </div>
+              <div class="space-y-2">
+                <label for="email" class="text-xs font-semibold uppercase tracking-wider text-zinc-400">Seu
+                  E-mail</label>
+                <input type="email" id="email" required
+                  class="w-full bg-zinc-950/80 border border-zinc-800/80 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow transition-all"
+                  placeholder="exemplo@email.com">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label for="whatsapp"
+                  class="text-xs font-semibold uppercase tracking-wider text-zinc-400">WhatsApp</label>
+                <input type="tel" id="whatsapp" required
+                  class="w-full bg-zinc-950/80 border border-zinc-800/80 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow transition-all"
+                  placeholder="(00) 00000-0000">
+              </div>
+              <div class="space-y-2">
+                <label for="interest" class="text-xs font-semibold uppercase tracking-wider text-zinc-400">Área de
+                  Interesse</label>
+                <select id="interest" required
+                  class="w-full bg-zinc-950/80 border border-zinc-800/80 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow transition-all appearance-none cursor-pointer">
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="marketing-pessoal">Marketing Pessoal</option>
+                  <option value="marketing-conteudo">Marketing de Conteúdo</option>
+                  <option value="redes-sociais">Redes Sociais</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="design-grafico">Design Gráfico</option>
+                  <option value="cursos">Cursos & Mentoria</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label for="message" class="text-xs font-semibold uppercase tracking-wider text-zinc-400">Mensagem</label>
+              <textarea id="message" rows="4"
+                class="w-full bg-zinc-950/80 border border-zinc-800/80 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-yellow transition-all resize-none"
+                placeholder="Descreva brevemente seu projeto ou dúvida..."></textarea>
+            </div>
+
+            <button type="submit"
+              class="btn-premium w-full py-4 rounded-xl bg-brand-yellow hover:bg-brand-yellow-hover text-brand-black font-bold text-center transition-all duration-300">
+              Enviar Solicitação
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-zinc-950 bg-brand-black">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+      <!-- Brand column -->
+      <div class="space-y-4">
+        <a href="#/home" class="flex items-center space-x-3 group w-max">
+          <div class="w-8 h-8 rounded-lg bg-brand-yellow flex items-center justify-center">
+            <svg class="w-5 h-5 text-brand-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+          </div>
+          <span class="font-display font-black text-lg tracking-tight text-white"><span
+              class="text-brand-yellow">.</span>panda</span>
+        </a>
+        <p class="text-zinc-400 text-xs leading-relaxed">
+          A .panda é pioneira em conectar design moderno e estratégias profundas de posicionamento digital para marcas
+          de elite.
+        </p>
+        <button id="toggle-nav-style-btn" class="mt-2 text-[10px] uppercase tracking-wider font-bold text-zinc-400 hover:text-brand-yellow transition-all flex items-center space-x-2 border border-zinc-800 hover:border-brand-yellow/30 px-3 py-1.5 rounded-lg bg-zinc-950/40">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <span>Mudar Navegação</span>
+        </button>
+        <p class="text-zinc-600 text-xs pt-2">
+          © 2026 .panda. Todos os direitos reservados.
+        </p>
+      </div>
+
+      <!-- Links Column 1 -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white">Navegação</h4>
+        <ul class="space-y-2 text-zinc-400 text-xs">
+          <li><a href="#/marketing-pessoal" class="hover:text-brand-yellow transition-colors">Marketing Pessoal</a></li>
+          <li><a href="#/marketing-conteudo" class="hover:text-brand-yellow transition-colors">Marketing de Conteúdo</a>
+          </li>
+          <li><a href="#/redes-sociais" class="hover:text-brand-yellow transition-colors">Redes Sociais</a></li>
+          <li><a href="#/web-design" class="hover:text-brand-yellow transition-colors">Web Design</a></li>
+          <li><a href="#/design-grafico" class="hover:text-brand-yellow transition-colors">Design Gráfico</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2 -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white">Academia</h4>
+        <ul class="space-y-2 text-zinc-400 text-xs">
+          <li><a href="#/cursos" class="hover:text-brand-yellow transition-colors">Cursos Disponíveis</a></li>
+          <li><a href="#/cursos" class="hover:text-brand-yellow transition-colors">Mentorias Privadas</a></li>
+          <li><a href="#contact" class="hover:text-brand-yellow transition-colors">Fale com Consultor</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacts Column -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white">Contato</h4>
+        <ul class="space-y-2 text-zinc-400 text-xs">
+          <li class="flex items-center space-x-2">
+            <svg class="w-3.5 h-3.5 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+              </path>
+            </svg>
+            <a href="https://wa.me/5511941704898" target="_blank" class="hover:text-brand-yellow transition-colors">(11)
+              9 4170-4898</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <svg class="w-3.5 h-3.5 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
+            <a href="mailto:oi@pandapanda.com.br"
+              class="hover:text-brand-yellow transition-colors">oi@pandapanda.com.br</a>
+          </li>
+          <li class="text-zinc-500 leading-normal">
+            Rua Aureliano Guimarães, 172<br>CJ:117 - Morumbi - SP
+          </li>
+          <li class="text-[10px] text-zinc-600 font-semibold tracking-wider uppercase">
+            Seg a sexta - 9hs as 18h
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS.js script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      offset: 100
+    });
+  </script>
+
+  <!-- App Main SPA Engine -->
+  <script src="app.js"></script>
+
+  <!-- WhatsApp Floating Widget -->
+  <div id="whatsapp-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <!-- WhatsApp Chat Window (Hidden by default) -->
+    <div id="whatsapp-chat-box" class="glass-panel w-72 sm:w-80 rounded-2xl mb-4 overflow-hidden shadow-2xl border border-zinc-800/80 transition-all duration-300 transform translate-y-4 scale-95 opacity-0 pointer-events-none">
+      <!-- Header -->
+      <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 p-4 text-white flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-display font-black text-sm">.p</div>
+          <div>
+            <h4 class="font-display font-bold text-sm">Atendimento .panda</h4>
+            <span class="text-[10px] text-emerald-100 flex items-center">
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400 mr-1.5 animate-pulse"></span>Online agora
+            </span>
+          </div>
+        </div>
+        <button id="whatsapp-close-btn" class="text-white/80 hover:text-white transition-colors" aria-label="Fechar menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Body / Questions -->
+      <div class="p-4 bg-zinc-950/90 space-y-3">
+        <p class="text-zinc-400 text-xs leading-relaxed mb-1">Selecione uma dúvida para iniciar a conversa:</p>
+        
+        <button class="whatsapp-opt-btn w-full text-left p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-emerald-500/5 text-xs text-zinc-300 hover:text-white transition-all flex items-center justify-between group" data-msg="Olá! Gostaria de saber mais sobre a Consultoria em Vendas.">
+          <span>Consultoria em Vendas</span>
+          <svg class="w-3.5 h-3.5 text-zinc-600 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <button class="whatsapp-opt-btn w-full text-left p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-emerald-500/5 text-xs text-zinc-300 hover:text-white transition-all flex items-center justify-between group" data-msg="Olá! Gostaria de saber mais sobre a Consultoria em Imagem.">
+          <span>Consultoria em Imagem</span>
+          <svg class="w-3.5 h-3.5 text-zinc-600 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <button class="whatsapp-opt-btn w-full text-left p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-emerald-500/5 text-xs text-zinc-300 hover:text-white transition-all flex items-center justify-between group" data-msg="Olá! Gostaria de solicitar um orçamento para os serviços da .panda.">
+          <span>Solicitar Orçamento de Serviços</span>
+          <svg class="w-3.5 h-3.5 text-zinc-600 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <button class="whatsapp-opt-btn w-full text-left p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-emerald-500/5 text-xs text-zinc-300 hover:text-white transition-all flex items-center justify-between group" data-msg="Olá! Gostaria de tirar algumas dúvidas gerais sobre a agência.">
+          <span>Outro Assunto / Falar com Atendente</span>
+          <svg class="w-3.5 h-3.5 text-zinc-600 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Floating Trigger Button -->
+    <button id="whatsapp-trigger" class="w-14 h-14 rounded-full bg-emerald-500 text-white shadow-2xl flex items-center justify-center hover:bg-emerald-400 hover:scale-110 active:scale-95 transition-all duration-300 relative group" aria-label="Abrir WhatsApp">
+      <!-- Glow effect -->
+      <span class="absolute inset-0 rounded-full bg-emerald-500 animate-ping opacity-30 group-hover:opacity-0 transition-opacity"></span>
+      <!-- Icon -->
+      <svg class="w-7 h-7 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.761.462 3.473 1.336 4.988l-1.36 4.966 5.097-1.335c1.472.802 3.124 1.226 4.915 1.226 5.507 0 9.988-4.482 9.988-9.988 0-5.506-4.481-9.988-9.988-9.988zm0 18.294c-1.579 0-3.13-.418-4.494-1.208l-.323-.192-2.996.786.8-2.92-.211-.336c-.868-1.383-1.326-2.982-1.326-4.636 0-4.743 3.858-8.601 8.601-8.601 4.742 0 8.601 3.858 8.601 8.601.001 4.743-3.857 8.601-8.602 8.601zm4.721-6.431c-.258-.129-1.528-.755-1.764-.841-.237-.086-.409-.129-.581.129-.172.258-.667.841-.818 1.014-.151.172-.301.194-.559.065-.258-.129-1.09-.402-2.077-1.281-.768-.685-1.286-1.533-1.437-1.791-.151-.258-.016-.398.113-.526.116-.115.258-.301.388-.452.129-.151.172-.258.258-.43.086-.172.043-.323-.021-.452-.065-.129-.581-1.399-.796-1.916-.209-.502-.416-.434-.581-.442l-.495-.008c-.172 0-.452.065-.688.323-.237.258-.904.883-.904 2.153 0 1.27.925 2.502 1.054 2.674.129.172 1.82 2.78 4.41 3.896.616.265 1.096.423 1.472.542.619.197 1.183.169 1.628.102.496-.075 1.528-.624 1.743-1.227.215-.603.215-1.119.151-1.227-.064-.108-.236-.172-.494-.301z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Floating Bottom Navigation -->
+  <nav id="floating-bottom-nav" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[45] flex items-center bg-zinc-950/80 border border-zinc-800/80 backdrop-blur-lg px-4 py-2 rounded-full shadow-2xl space-x-1 sm:space-x-2 transition-all duration-300 transform translate-y-20 opacity-0 pointer-events-none">
+    
+    <!-- Link: Home -->
+    <a href="#/home" class="nav-spa-link flex flex-col items-center justify-center w-12 h-12 rounded-full text-zinc-400 hover:text-brand-yellow hover:bg-zinc-900/50 transition-all group" title="Início">
+      <svg class="w-5 h-5 mb-0.5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+      </svg>
+      <span class="text-[9px] font-semibold tracking-wider font-display uppercase scale-90">Home</span>
+    </a>
+
+    <!-- Link: Serviços -->
+    <a href="#/services" class="nav-spa-link flex flex-col items-center justify-center w-12 h-12 rounded-full text-zinc-400 hover:text-brand-yellow hover:bg-zinc-900/50 transition-all group" title="Serviços">
+      <svg class="w-5 h-5 mb-0.5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+      </svg>
+      <span class="text-[9px] font-semibold tracking-wider font-display uppercase scale-90">Serviços</span>
+    </a>
+
+    <!-- Link: Cursos -->
+    <a href="#/cursos" class="nav-spa-link flex flex-col items-center justify-center w-12 h-12 rounded-full text-zinc-400 hover:text-brand-yellow hover:bg-zinc-900/50 transition-all group" title="Cursos">
+      <svg class="w-5 h-5 mb-0.5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+      </svg>
+      <span class="text-[9px] font-semibold tracking-wider font-display uppercase scale-90">Cursos</span>
+    </a>
+
+    <!-- Link: Blog -->
+    <a href="#/blog" class="nav-spa-link flex flex-col items-center justify-center w-12 h-12 rounded-full text-zinc-400 hover:text-brand-yellow hover:bg-zinc-900/50 transition-all group" title="Blog">
+      <svg class="w-5 h-5 mb-0.5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+      </svg>
+      <span class="text-[9px] font-semibold tracking-wider font-display uppercase scale-90">Blog</span>
+    </a>
+
+    <!-- Link: Contato -->
+    <a href="#contact" class="nav-spa-link flex flex-col items-center justify-center w-12 h-12 rounded-full text-zinc-400 hover:text-brand-yellow hover:bg-zinc-900/50 transition-all group" title="Contato">
+      <svg class="w-5 h-5 mb-0.5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+      </svg>
+      <span class="text-[9px] font-semibold tracking-wider font-display uppercase scale-90">Contato</span>
+    </a>
+
+  </nav>
+</body>
+</html>
