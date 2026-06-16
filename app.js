@@ -159,34 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Light/Dark Theme Switcher
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  if (themeToggleBtn) {
-    // Check saved preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      document.body.classList.add('light-theme');
-      updateThemeIcon(true);
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-      const isLight = document.body.classList.toggle('light-theme');
-      localStorage.setItem('theme', isLight ? 'light' : 'dark');
-      updateThemeIcon(isLight);
-    });
-
-    function updateThemeIcon(isLight) {
-      const icon = themeToggleBtn.querySelector('svg');
-      if (isLight) {
-        // SVG for Moon icon (show when in light mode to suggest switching to dark)
-        icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />`;
-        themeToggleBtn.setAttribute('aria-label', 'Mudar para modo escuro');
-      } else {
-        // SVG for Sun icon (show when in dark mode to suggest switching to light)
-        icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />`;
-      }
-    }
-  }
+  // Revert theme preference to dark mode only
+  localStorage.removeItem('theme');
+  document.body.classList.remove('light-theme');
 
   // Stats Counter Animation
   const counters = document.querySelectorAll('.dynamic-counter');
